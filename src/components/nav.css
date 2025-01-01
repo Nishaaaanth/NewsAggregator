@@ -1,0 +1,40 @@
+@import url("../index.css");
+
+.nav-bar {
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0px 3px 9px var(--shadow-color);
+    background-color: var(--primary-color);
+}
+
+h4 {
+    color: var(--label-silver-color);
+    font-weight: 500;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    transition: scale 0.3s ease;
+}
+
+.logo:hover {
+    scale: 1.15;
+}
+
+@media only screen and (min-width: 425px) {
+    .nav-bar {
+        padding: 1.5rem 2rem;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,137 @@
+@import url("../index.css");
+
+/* feed list */
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100%;
+    width: auto;
+    padding: 1rem 0;
+    border-top: solid var(--label-silver-color) 2px;
+}
+
+header {
+    font-weight: bold;
+    font-size: 1.3rem;
+    opacity: 80%;
+}
+
+.nav-bar-cog {
+    scale: 1.5;
+    cursor: pointer;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* feed card */
+.feedcard-container {
+    display: flex;
+    padding: 0.5rem 0;
+    border-bottom: dotted var(--label-silver-color) 1px;
+    cursor: pointer;
+}
+
+.feedcard-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.feedcard-title:hover {
+    text-decoration: underline;
+}
+
+img {
+    padding-right: 0.5rem;
+    max-width: 140px;
+    object-fit: contain;
+}
+
+.feedcard-meta {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+    font-weight: 100;
+}
+
+footer {
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+    font-weight: 100;
+    font-weight: bold;
+    color: var(--label-silver-color);
+}
+
+@media only screen and (min-width: 425px) {
+    .feed-container {
+        min-height: 100vh;
+        padding: 1rem;
+    }
+
+    .feed-header {
+        padding: 1rem;
+    }
+
+    header {
+        font-size: 1.7rem;
+    }
+
+    .nav-bar-cog {
+        scale: 2.3;
+        transition: transform 0.7s ease;
+        transform-origin: center;
+        cursor: pointer;
+    }
+
+    .nav-bar-cog:hover {
+        transform: rotate(30deg);
+    }
+
+    .feedcard-main-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .feedcard-container {
+        box-shadow: 3px 3px 9px var(--shadow-color);
+        padding: 1rem;
+    }
+
+    .feedcard-title {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    footer, .feedcard-meta {
+        font-weight: bold;
+        color: var(--label-silver-color);
+        font-size: 0.8rem;
+    }
+
+    article {
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-bar-cog {
+        scale: 2;
+        transition: transform 0.7s ease;
+        transform-origin: center;
+    }
+
+    .nav-bar-cog:hover {
+        transform: rotate(30deg);
+    }
+}

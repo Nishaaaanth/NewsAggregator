@@ -1,0 +1,125 @@
+@import url("../index.css");
+
+.search-bar-container {
+    background-color: var(--tertiary-color);
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 1.2rem 0;
+    box-shadow: 3px 3px 9px var(--shadow-color);
+    padding: 0.2rem 1rem;
+    border: dotted var(--label-sliver-color) 5px;
+    border-radius: 1rem;
+}
+
+/* input */
+.search-bar-input {
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.5rem 0.6rem;
+}
+
+input.search-bar-input:focus {
+    outline: none;
+}
+
+input.search-bar-input::placeholder {
+    color: grey;
+}
+
+/* filter */
+.search-bar-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.search-bar-filter-date {
+    display: flex;
+}
+
+select,
+span {
+    margin: 0.5rem 1rem;
+}
+
+select,
+input[type="date"],
+.search-bar-filter-author,
+button {
+    border: dashed var(--shadow-color) 1px;
+    outline: none;
+    font-family: monospace;
+    font-size: 0.7rem;
+    width: 5.6rem;
+}
+
+.search-bar-filter-author {
+    padding: 0.1rem;
+}
+
+.feed-filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 9px var(--shadow-color);
+}
+
+@media only screen and (min-width: 425px) {
+    .search-bar-container {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .search-bar-container {
+        max-width: 50%;
+        height: 3rem;
+    }
+
+    select,
+    span,
+    .search-bar-filter-author {
+        margin: 1.5rem 5rem;
+        scale: 1.5;
+        padding: 0.3rem;
+        width: 7.4rem;
+    }
+
+
+    button {
+        margin: 1.5rem 5rem;
+        padding: 0.3rem;
+        width: 7rem;
+    }
+
+
+    input[type="date"] {
+        padding: 0.3rem;
+        width: 7rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    input.search-bar-input::placeholder {
+        font-size: 1rem;
+    }
+
+    .search-bar-filter {
+        margin-bottom: 3rem;
+    }
+
+    .feed-filter-container {
+        margin-bottom: 1rem;
+    }
+}
