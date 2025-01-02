@@ -1,4 +1,27 @@
 # innoscripta (News Aggregator Assessment)
+<p align="center">
+    <img src="./public/news-landing.png"
+        alt="News Landing"
+        width="300"
+        height="300"
+    />
+</p>
+<br></br>
+<p align="center">
+    <img src="./public/news-feeds.png"
+        alt="News Landing"
+        width="300"
+        height="300"
+    />
+</p>
+<br></br>
+<p align="center">
+    <img src="./public/news-list.png"
+        alt="News Landing"
+        width="300"
+        height="300"
+    />
+</p>
 
 ## Dependencies
 - NPM
